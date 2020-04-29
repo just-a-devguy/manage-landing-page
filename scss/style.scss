@@ -1,0 +1,31 @@
+@import "_utilities";
+
+// Header
+header {
+  //   border: solid black;
+  background-color: red;
+  background-image: url("../images/bg-tablet-pattern.svg");
+
+  .main-nav {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    .logo {
+      align-self: center;
+      display: flex;
+      align-items: center;
+    }
+    &__items {
+      display: flex;
+      align-self: center;
+    }
+    &__item {
+      margin: 0 0.5rem;
+    }
+    &__link {
+      color: $dark-color;
+    }
+  }
+}

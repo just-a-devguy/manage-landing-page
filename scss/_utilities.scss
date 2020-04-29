@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+
+$primary-color: #f25f3a;
+$secondary-color: #242d52;
+$neutral-color: #9095a7;
+$dark-color: #1d1e25;
+$pale-color: #ffefeb;
+$light-color: #fafafa;
+
+$main-font: "Be Vietnam", sans-serif;
+
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// General Styles
+body {
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: inline-block;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@mixin cta {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 10px -7px $primary-color;
+}
+
+.cta__main {
+  @include cta();
+  background-color: $primary-color;
+  color: $light-color;
+  &:hover {
+    background-color: rgba(242, 95, 58, 0.85);
+  }
+}
+
+// .cta {
+//   display: inline-block;
+//   padding: 0.5rem 2rem;
+//   border-radius: 2rem;
+//   &__main {
+//     background-color: $primary-color;
+//     color: $light-color;
+//     box-shadow: 0px 10px 15px -7px $pale-color;
+//   }
+// }
