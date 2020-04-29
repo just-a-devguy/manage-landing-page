@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Front end mentor manage landing page project",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "node-sass": "^4.14.0"
   },
-  "devDependencies": {},
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
