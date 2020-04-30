@@ -33,8 +33,54 @@ header {
   }
   // Showcase section
   .showcase {
-    border: solid red;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    &__mssg {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 3rem;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        margin: 2rem 0;
+        padding-right: 3rem;
+      }
+    }
+  }
+}
+
+main {
+  // Values Section
+  .values {
+    &__mssg {
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        padding-right: 8rem;
+      }
+    }
+    &__items {
+      // width: 580px;
+      .values__item {
+        display: flex;
+        justify-content: space-around;
+        &-num {
+          p {
+            background-color: $primary-color;
+            color: $light-color;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+          }
+        }
+        &-mssg {
+          width: 80%;
+          &__header {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
   }
 }

@@ -20,6 +20,12 @@ img {
   width: 80%;
   margin: auto; }
 
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.5rem;
+  margin-bottom: 3rem; }
+
 .cta__main {
   display: inline-block;
   padding: 0.5rem 2rem;
@@ -51,7 +57,33 @@ header {
       color: #1d1e25; }
       header .main-nav__link:hover {
         color: rgba(29, 30, 37, 0.5); }
-  header .showcase {
-    border: solid red;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+  header .showcase__mssg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 3rem; }
+    header .showcase__mssg h1 {
+      font-size: 3rem; }
+    header .showcase__mssg p {
+      margin: 2rem 0;
+      padding-right: 3rem; }
+
+main .values__mssg h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem; }
+
+main .values__mssg p {
+  padding-right: 8rem; }
+
+main .values__items .values__item {
+  display: flex;
+  justify-content: space-around; }
+  main .values__items .values__item-num p {
+    background-color: #f25f3a;
+    color: #fafafa;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem; }
+  main .values__items .values__item-mssg {
+    width: 80%; }
+    main .values__items .values__item-mssg__header {
+      margin-bottom: 1rem; }

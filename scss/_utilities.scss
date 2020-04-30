@@ -38,6 +38,13 @@ img {
   margin: auto;
 }
 
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.5rem;
+  margin-bottom: 3rem;
+}
+
 @function colorLighter($color) {
   @return lighten($color, 10%);
 }
