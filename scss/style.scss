@@ -1,9 +1,9 @@
 @import "_utilities";
+// @use 'utilities' as *;
 
 // Header
 header {
   //   border: solid black;
-  background-color: red;
   background-image: url("../images/bg-tablet-pattern.svg");
 
   .main-nav {
@@ -26,6 +26,15 @@ header {
     }
     &__link {
       color: $dark-color;
+      &:hover {
+        color: rgba(29, 30, 37, 0.5);
+      }
     }
+  }
+  // Showcase section
+  .showcase {
+    border: solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

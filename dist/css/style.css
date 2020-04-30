@@ -28,10 +28,9 @@ img {
   background-color: #f25f3a;
   color: #fafafa; }
   .cta__main:hover {
-    background-color: rgba(242, 95, 58, 0.85); }
+    background-color: #f5866a; }
 
 header {
-  background-color: red;
   background-image: url("../images/bg-tablet-pattern.svg"); }
   header .main-nav {
     margin: 2rem auto;
@@ -50,3 +49,9 @@ header {
       margin: 0 0.5rem; }
     header .main-nav__link {
       color: #1d1e25; }
+      header .main-nav__link:hover {
+        color: rgba(29, 30, 37, 0.5); }
+  header .showcase {
+    border: solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
