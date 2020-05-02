@@ -16,6 +16,9 @@ li {
 img {
   display: inline-block; }
 
+#btn {
+  box-shadow: none; }
+
 .container {
   width: 80%;
   margin: auto; }
@@ -87,3 +90,23 @@ main .values__items .values__item {
     width: 80%; }
     main .values__items .values__item-mssg__header {
       margin-bottom: 1rem; }
+
+.footer {
+  background-color: #1d1e25;
+  padding: 60px 0; }
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "smedia links form" "smedia links";
+    max-width: 100%;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin: 0 auto; }
+  .footer .footer-smedia {
+    grid-template-areas: smedia;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .footer .footer-links {
+    column-count: 2; }

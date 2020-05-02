@@ -1,6 +1,6 @@
 @import "_utilities";
-// @use 'utilities' as *;
 
+// @use 'utilities' as *;
 // Header
 header {
   //   border: solid black;
@@ -83,4 +83,36 @@ main {
       }
     }
   }
+}
+
+.footer {
+  background-color: $dark-color;
+  // height: 379px;
+  padding: 60px 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "smedia links form" "smedia links";
+    max-width: 100%;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .footer-smedia {
+    grid-template-areas: smedia;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-links {
+    // grid-area: links;
+    column-count: 2;
+    // column-gap: 130px;
+  }
+  // .footer-form {
+  //   grid-template-areas: form;
+  //   justify-self: end;
+  // }
 }
