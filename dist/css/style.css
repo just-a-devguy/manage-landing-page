@@ -102,9 +102,26 @@ main .testimonials {
     display: flex;
     overflow: hidden; }
   main .testimonials__item {
-    border: solid red;
-    width: 1050px;
     display: block; }
+  main .testimonials__card {
+    position: relative;
+    margin: 2rem 0;
+    border: solid red; }
+    main .testimonials__card-header {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20%; }
+      main .testimonials__card-header img {
+        width: 100%; }
+    main .testimonials__card-body {
+      background-color: #ffefeb;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-radius: 0.2rem; }
+    main .testimonials__card-title {
+      margin: 0.8rem 0; }
   main .testimonials #back,
   main .testimonials #forth {
     color: #fff;

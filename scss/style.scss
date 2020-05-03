@@ -98,9 +98,33 @@ main {
       overflow: hidden;
     }
     &__item {
-      border: solid red;
-      width: 1050px;
+      // border: solid red;
+      // width: 1050px;
       display: block;
+    }
+    &__card {
+      position: relative;
+      margin: 2rem 0;
+      border: solid red;
+      &-header {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        img {
+          width: 100%;
+        }
+      }
+      &-body {
+        background-color: $pale-color;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-radius: 0.2rem;
+      }
+      &-title {
+        margin: 0.8rem 0;
+      }
     }
     #back,
     #forth {
