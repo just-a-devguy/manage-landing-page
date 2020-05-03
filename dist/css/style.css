@@ -170,8 +170,6 @@ main .testimonials {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .footer .footer-smedia__logo {
-      fill: #fff; }
     .footer .footer-smedia__links a {
       margin-right: 10px; }
     .footer .footer-smedia__icon {
@@ -179,7 +177,8 @@ main .testimonials {
     .footer .footer-smedia__icon:hover {
       fill: #f25f3a; }
   .footer .footer-links {
-    column-count: 2; }
+    column-count: 2;
+    column-gap: 130px; }
     .footer .footer-links__item a {
       color: #fafafa; }
     .footer .footer-links__item a:hover {

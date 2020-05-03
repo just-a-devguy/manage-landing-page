@@ -183,10 +183,6 @@ main {
     flex-direction: column;
     justify-content: space-between;
 
-    &__logo {
-      fill: #fff;
-    }
-
     &__links a {
       margin-right: 10px;
     }
@@ -203,7 +199,7 @@ main {
   .footer-links {
     // grid-area: links;
     column-count: 2;
-    // column-gap: 130px;
+    column-gap: 130px;
 
     &__item a {
       color: $light-color;
