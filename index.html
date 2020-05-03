@@ -155,29 +155,54 @@
     provide structure and process. It keeps us organized and focused. I can’t
     stop recommending them to everyone I talk to!” Shanai Gough “Their software
     allows us to track, manage and collaborate on our projects from anywhere. It
-    keeps the whole team in-sync without being intrusive.” Get Started Simplify
-    how your team works today. Get Started Updates in your inbox… Go Copyright
-    2020. All Rights Reserved
+    keeps the whole team in-sync without being intrusive.” Get
 
+    <section class="action">
+      <div class="container">
+        <h2>Simplify how your team works today.</h2>
+        <a href="#" id="action__btn" class="cta__main">Get Started</a>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <div class="footer-smedia">
           <div class="footer-smedia__logo">
-            <img src="/images/logo.svg" alt="" />
+            <img src="/images/logo-white.svg" alt="" />
           </div>
           <div class="footer-smedia__links">
-            <a href="http://"><img src="/images/icon-facebook.svg" alt="" /></a>
-
-            <a href="http://"><img src="/images/icon-youtube.svg" alt="" /></a>
-
-            <a href="http://"><img src="/images/icon-twitter.svg" alt="" /></a>
-
             <a href="http://"
-              ><img src="/images/icon-pinterest.svg" alt=""
+              ><img
+                src="/images/icon-facebook.svg"
+                alt=""
+                class="footer-smedia__icon"
             /></a>
 
             <a href="http://"
-              ><img src="/images/icon-instagram.svg" alt=""
+              ><img
+                src="/images/icon-youtube.svg"
+                alt=""
+                class="footer-smedia__icon"
+            /></a>
+
+            <a href="http://"
+              ><img
+                src="/images/icon-twitter.svg"
+                alt=""
+                class="footer-smedia__icon"
+            /></a>
+
+            <a href="http://"
+              ><img
+                src="/images/icon-pinterest.svg"
+                alt=""
+                class="footer-smedia__icon"
+            /></a>
+
+            <a href="http://"
+              ><img
+                src="/images/icon-instagram.svg"
+                alt=""
+                class="footer-smedia__icon"
             /></a>
           </div>
         </div>
@@ -193,8 +218,11 @@
           </ul>
         </div>
         <div class="footer-form">
-          <input type="email" placeholder="Updates in your inbox" />
+          <input type="email" placeholder="Updates in your inbox..." />
           <a href="#" id="btn" class="cta__main">Go</a>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright <span id="year">2020 </span>All Rights Reserved</p>
         </div>
         <!-- <div class="attribution">
           Challenge by
@@ -204,5 +232,8 @@
         </div> -->
       </div>
     </footer>
+    <script>
+      $("#year").text(new Date().getFullYear());
+    </script>
   </body>
 </html>
