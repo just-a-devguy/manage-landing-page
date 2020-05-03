@@ -152,6 +152,40 @@ main {
   }
 }
 
+.action {
+  padding: 60px 0;
+  background-color: $primary-color;
+  background-image: url(/images/bg-simplify-section-desktop.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100px -150px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    color: $pale-color;
+    max-width: 440px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  #action__btn {
+    @include cta();
+    box-shadow: none;
+    color: $primary-color;
+    background-color: $pale-color;
+    padding: 0.8rem 2rem;
+    width: 160px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
 .footer {
   background-color: $dark-color;
   // height: 379px;
@@ -160,7 +194,7 @@ main {
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "smedia links form" "smedia links";
+    grid-template-areas: "smedia links form" "smedia links copyright";
     max-width: 100%;
     width: 1100px;
     margin: 0 auto;
@@ -172,14 +206,53 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &__logo {
+      fill: #fff;
+    }
+
+    &__links a {
+      margin-right: 10px;
+    }
+
+    &__icon {
+      fill: #fff;
+    }
+
+    &__icon:hover {
+      fill: $primary-color;
+    }
   }
+
   .footer-links {
     // grid-area: links;
     column-count: 2;
     // column-gap: 130px;
+
+    &__item a {
+      color: $light-color;
+    }
+
+    &__item a:hover {
+      color: $primary-color;
+    }
   }
-  // .footer-form {
-  //   grid-template-areas: form;
-  //   justify-self: end;
-  // }
+  .footer-form {
+    grid-template-areas: form;
+    justify-self: end;
+  }
+  .footer-form input {
+    width: 240px;
+    // height: 45px;
+    border-radius: 2rem;
+    font-size: 12px;
+    padding: 0.6rem 2rem;
+    margin-right: 10px;
+  }
+  .footer-copyright {
+    grid-area: copyright;
+    color: #fff;
+    justify-self: flex-end;
+    font-size: 14px;
+  }
 }

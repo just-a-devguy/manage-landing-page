@@ -139,13 +139,44 @@ main .testimonials {
     right: 0;
     top: 80px; }
 
+.action {
+  padding: 60px 0;
+  background-color: #f25f3a;
+  background-image: url(/images/bg-simplify-section-desktop.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100px -150px; }
+  .action .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .action h2 {
+    color: #ffefeb;
+    max-width: 440px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 2rem; }
+  .action #action__btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 10px -7px #f25f3a;
+    box-shadow: none;
+    color: #f25f3a;
+    background-color: #ffefeb;
+    padding: 0.8rem 2rem;
+    width: 160px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 700; }
+
 .footer {
   background-color: #1d1e25;
   padding: 60px 0; }
   .footer .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "smedia links form" "smedia links";
+    grid-template-areas: "smedia links form" "smedia links copyright";
     max-width: 100%;
     width: 1100px;
     margin: 0 auto;
@@ -156,5 +187,31 @@ main .testimonials {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .footer .footer-smedia__logo {
+      fill: #fff; }
+    .footer .footer-smedia__links a {
+      margin-right: 10px; }
+    .footer .footer-smedia__icon {
+      fill: #fff; }
+    .footer .footer-smedia__icon:hover {
+      fill: #f25f3a; }
   .footer .footer-links {
     column-count: 2; }
+    .footer .footer-links__item a {
+      color: #fafafa; }
+    .footer .footer-links__item a:hover {
+      color: #f25f3a; }
+  .footer .footer-form {
+    grid-template-areas: form;
+    justify-self: end; }
+  .footer .footer-form input {
+    width: 240px;
+    border-radius: 2rem;
+    font-size: 12px;
+    padding: 0.6rem 2rem;
+    margin-right: 10px; }
+  .footer .footer-copyright {
+    grid-area: copyright;
+    color: #fff;
+    justify-self: flex-end;
+    font-size: 14px; }
