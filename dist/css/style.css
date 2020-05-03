@@ -91,6 +91,37 @@ main .values__items .values__item {
     main .values__items .values__item-mssg__header {
       margin-bottom: 1rem; }
 
+main .testimonials {
+  text-align: center; }
+  main .testimonials__title {
+    margin: 2rem 0; }
+  main .testimonials__details {
+    margin: 2rem 0;
+    position: relative; }
+  main .testimonials__list {
+    display: flex;
+    overflow: hidden; }
+  main .testimonials__item {
+    border: solid red;
+    width: 1050px;
+    display: block; }
+  main .testimonials #back,
+  main .testimonials #forth {
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer; }
+  main .testimonials #back {
+    position: absolute;
+    left: 0;
+    top: 80px; }
+  main .testimonials #forth {
+    position: absolute;
+    right: 0;
+    top: 80px; }
+
 .action {
   padding: 60px 0;
   background-color: #f25f3a;
