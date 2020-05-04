@@ -54,15 +54,11 @@
           <a href="#" class="cta__main">Get Started</a>
         </div>
       </nav>
-      <!-- <div style="background-color: black;">
-        <img src="images/bg-simplify-section-desktop.svg" alt="" />
-      </div>
-      <div style="background-color: black;">
-        <img src="images/bg-simplify-section-mobile.svg" alt="" />
-      </div>
-      <div>
-        <img src="images/bg-tablet-pattern.svg" alt="" />
+
+      <!-- <div class="header__bg">
+        <img src="images/bg-simplify-section-desktop.svg" alt="backgound" />
       </div> -->
+
       <section class="showcase container grid-item">
         <div class="showcase__mssg">
           <h1>Bring everyone together to build better products.</h1>
@@ -283,7 +279,12 @@
         </div>
         <div class="footer-form">
           <form class="form">
-            <input type="email" placeholder="Updates in your inbox..." />
+            <input
+              type="email"
+              id="email-input"
+              placeholder="Updates in your inbox..."
+            />
+            <span id="err-mssg">Please insert a valid e-mail</span>
             <button id="btn" class="cta__main">Go</button>
           </form>
         </div>

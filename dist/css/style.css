@@ -49,37 +49,36 @@ img {
   margin-top: 30px;
   color: #fff; }
 
-header {
-  background-image: url("../images/bg-tablet-pattern.svg"); }
-  header .main-nav {
-    margin: 2rem auto;
+header .main-nav {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0; }
+  header .main-nav .logo {
+    align-self: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0; }
-    header .main-nav .logo {
-      align-self: center;
-      display: flex;
-      align-items: center; }
-    header .main-nav__items {
-      display: flex;
-      align-self: center; }
-    header .main-nav__item {
-      margin: 0 0.5rem; }
-    header .main-nav__link {
-      color: #1d1e25; }
-      header .main-nav__link:hover {
-        color: rgba(29, 30, 37, 0.5); }
-  header .showcase__mssg {
+    align-items: center; }
+  header .main-nav__items {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 3rem; }
-    header .showcase__mssg h1 {
-      font-size: 3rem; }
-    header .showcase__mssg p {
-      margin: 2rem 0;
-      padding-right: 3rem; }
+    align-self: center; }
+  header .main-nav__item {
+    margin: 0 0.5rem; }
+  header .main-nav__link {
+    color: #1d1e25; }
+    header .main-nav__link:hover {
+      color: rgba(29, 30, 37, 0.5); }
+
+header .showcase__mssg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 3rem; }
+  header .showcase__mssg h1 {
+    font-size: 3rem; }
+  header .showcase__mssg p {
+    margin: 2rem 0;
+    padding-right: 3rem; }
 
 main .values__mssg h2 {
   font-size: 2rem;
@@ -90,7 +89,8 @@ main .values__mssg p {
 
 main .values__items .values__item {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 0.5rem 0; }
   main .values__items .values__item-num p {
     background-color: #f25f3a;
     color: #fafafa;
@@ -99,7 +99,7 @@ main .values__items .values__item {
   main .values__items .values__item-mssg {
     width: 80%; }
     main .values__items .values__item-mssg__header {
-      margin-bottom: 1rem; }
+      margin-bottom: 0.5rem; }
 
 main .testimonials {
   text-align: center;
@@ -209,6 +209,17 @@ main .testimonials {
     padding: 0.5rem;
     margin-right: 10px;
     border: none; }
+  .footer .form {
+    position: relative; }
+  .footer #err-mssg {
+    color: red;
+    position: absolute;
+    min-width: 100%;
+    top: 100%;
+    left: 0;
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+    display: none; }
   .footer .footer-form #btn {
     border: none; }
   .footer .footer-copyright {
