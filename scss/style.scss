@@ -172,6 +172,7 @@ main {
   #action__btn {
     @include cta();
     box-shadow: none;
+    text-align: center;
     color: $primary-color;
     background-color: $pale-color;
     padding: 0.8rem 2rem;
@@ -183,6 +184,7 @@ main {
   #action__btn:hover {
     background-color: lighten($primary-color, 15%);
     transform: scale(0.98);
+    color: #fff;
   }
 }
 
@@ -267,6 +269,7 @@ main {
 
   .footer-form #btn {
     border: none;
+    cursor: pointer;
   }
 
   .footer-copyright {

@@ -159,6 +159,7 @@ main .testimonials {
     border-radius: 2rem;
     box-shadow: 0px 10px 10px -7px #f25f3a;
     box-shadow: none;
+    text-align: center;
     color: #f25f3a;
     background-color: #ffefeb;
     padding: 0.8rem 2rem;
@@ -168,7 +169,8 @@ main .testimonials {
     font-weight: 700; }
   .action #action__btn:hover {
     background-color: #f79982;
-    transform: scale(0.98); }
+    transform: scale(0.98);
+    color: #fff; }
 
 .footer {
   background-color: #1d1e25;
@@ -221,7 +223,8 @@ main .testimonials {
     font-size: 0.7rem;
     display: none; }
   .footer .footer-form #btn {
-    border: none; }
+    border: none;
+    cursor: pointer; }
   .footer .footer-copyright {
     grid-area: copyright;
     justify-self: end;
