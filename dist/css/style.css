@@ -152,6 +152,9 @@ main .testimonials {
     height: 45px;
     font-size: 14px;
     font-weight: 700; }
+  .action #action__btn:hover {
+    background-color: #f79982;
+    transform: scale(0.98); }
 
 .footer {
   background-color: #1d1e25;
@@ -163,10 +166,9 @@ main .testimonials {
     max-width: 100%;
     width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
-    margin: 0 auto; }
+    padding: 0 20px; }
   .footer .footer-smedia {
-    grid-template-areas: smedia;
+    grid-area: smedia;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -177,6 +179,7 @@ main .testimonials {
     .footer .footer-smedia__icon:hover {
       fill: #f25f3a; }
   .footer .footer-links {
+    grid-area: links;
     column-count: 2;
     column-gap: 130px; }
     .footer .footer-links__item a {
@@ -184,16 +187,20 @@ main .testimonials {
     .footer .footer-links__item a:hover {
       color: #f25f3a; }
   .footer .footer-form {
-    grid-template-areas: form;
+    grid-area: form;
     justify-self: end; }
   .footer .footer-form input {
-    width: 240px;
     border-radius: 2rem;
     font-size: 12px;
-    padding: 0.6rem 2rem;
-    margin-right: 10px; }
+    padding: 0.5rem;
+    margin-right: 10px;
+    border: none; }
+  .footer .footer-form #btn {
+    border: none; }
   .footer .footer-copyright {
     grid-area: copyright;
-    color: #fff;
-    justify-self: flex-end;
-    font-size: 14px; }
+    justify-self: end;
+    align-self: flex-end; }
+  .footer .footer-copyright span {
+    font-size: 12px;
+    color: #9095a7; }
