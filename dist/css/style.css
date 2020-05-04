@@ -10,6 +10,9 @@ body {
 a {
   text-decoration: none; }
 
+button {
+  border: none; }
+
 li {
   list-style: none; }
 
@@ -95,22 +98,24 @@ main .testimonials {
   text-align: center;
   margin-bottom: 5rem; }
   main .testimonials__title {
-    margin: 2rem 0; }
+    border: solid red; }
   main .testimonials__details {
     margin: 2rem 0;
     position: relative; }
   main .testimonials__list {
+    width: 130%;
     display: flex;
-    overflow: hidden; }
+    overflow: auto; }
   main .testimonials__item {
-    display: block; }
+    display: block;
+    margin: 0 1rem;
+    width: 33%; }
   main .testimonials__card {
     position: relative;
     margin: 2rem 0;
-    border: solid red; }
+    min-height: 210px; }
     main .testimonials__card-header {
       position: absolute;
-      top: 15%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 20%; }
@@ -120,25 +125,10 @@ main .testimonials {
       background-color: #ffefeb;
       margin-top: 2rem;
       padding-top: 2rem;
-      border-radius: 0.2rem; }
+      border-radius: 0.2rem;
+      min-height: 200px; }
     main .testimonials__card-title {
       margin: 0.8rem 0; }
-  main .testimonials #back,
-  main .testimonials #forth {
-    color: #fff;
-    background-color: #333;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    cursor: pointer; }
-  main .testimonials #back {
-    position: absolute;
-    left: 0;
-    top: 80px; }
-  main .testimonials #forth {
-    position: absolute;
-    right: 0;
-    top: 80px; }
 
 .action {
   padding: 60px 0;
@@ -188,8 +178,6 @@ main .testimonials {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .footer .footer-smedia__logo {
-      fill: #fff; }
     .footer .footer-smedia__links a {
       margin-right: 10px; }
     .footer .footer-smedia__icon {
@@ -197,7 +185,8 @@ main .testimonials {
     .footer .footer-smedia__icon:hover {
       fill: #f25f3a; }
   .footer .footer-links {
-    column-count: 2; }
+    column-count: 2;
+    column-gap: 130px; }
     .footer .footer-links__item a {
       color: #fafafa; }
     .footer .footer-links__item a:hover {

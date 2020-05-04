@@ -88,28 +88,36 @@ main {
     text-align: center;
     margin-bottom: 5rem;
     &__title {
-      margin: 2rem 0;
+      // margin: 2rem 0;
+      border: solid red;
     }
     &__details {
       margin: 2rem 0;
       position: relative;
+      // border: solid yellow;
+      // overflow: hidden;
     }
     &__list {
+      width: 130%;
       display: flex;
-      overflow: hidden;
+      overflow: auto;
+      // border: solid green;
     }
     &__item {
-      // border: solid red;
+      // border: solid blue;
       // width: 1050px;
       display: block;
+      margin: 0 1rem;
+      width: 33%;
     }
     &__card {
       position: relative;
       margin: 2rem 0;
-      border: solid red;
+      // border: solid red;
+      min-height: 210px;
       &-header {
         position: absolute;
-        top: 15%;
+        // top: 15%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 20%;
@@ -122,33 +130,11 @@ main {
         margin-top: 2rem;
         padding-top: 2rem;
         border-radius: 0.2rem;
+        min-height: 200px;
       }
       &-title {
         margin: 0.8rem 0;
       }
-    }
-    #back,
-    #forth {
-      // display: flex; font-size: 32px;
-      // align-items: center; justify-content: center;
-      color: #fff;
-      background-color: #333;
-      border-radius: 50%;
-      width: 44px;
-      height: 44px;
-      cursor: pointer;
-    }
-
-    #back {
-      position: absolute;
-      left: 0;
-      top: 80px;
-    }
-
-    #forth {
-      position: absolute;
-      right: 0;
-      top: 80px;
     }
   }
 }
@@ -208,10 +194,6 @@ main {
     flex-direction: column;
     justify-content: space-between;
 
-    &__logo {
-      fill: #fff;
-    }
-
     &__links a {
       margin-right: 10px;
     }
@@ -228,7 +210,7 @@ main {
   .footer-links {
     // grid-area: links;
     column-count: 2;
-    // column-gap: 130px;
+    column-gap: 130px;
 
     &__item a {
       color: $light-color;
