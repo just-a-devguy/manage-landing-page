@@ -3,10 +3,16 @@ const UI = {
   errMssg: "#err-mssg",
   emailBtn: "#btn",
   email: "#email-input",
+  testimonial: ".testimonials__item",
+  next: "#next",
+  prev: "#prev",
 };
 
 const emailSubmit = document.querySelector(UI.emailBtn),
   invalidMssg = document.querySelector(UI.errMssg),
+  testimonial = document.querySelectorAll(UI.testimonial),
+  nextBtn = document.querySelector(UI.next),
+  prevBtn = document.querySelector(UI.prev),
   email = document.querySelector(UI.email);
 
 // Functionalities
@@ -25,5 +31,24 @@ function emailValidation(e) {
   }
 }
 
+// Carousel
+function showNextItem() {
+  testimonial[3].scrollIntoView({
+    inline: "start",
+    behavior: "smooth",
+    block: "nearest",
+  });
+}
+
+function showPrevItem() {
+  testimonial[0].scrollIntoView({
+    inline: "start",
+    behavior: "smooth",
+    block: "nearest",
+  });
+}
+
 // Event Listeners
 emailSubmit.addEventListener("click", emailValidation);
+next.addEventListener("click", showNextItem);
+prev.addEventListener("click", showPrevItem);

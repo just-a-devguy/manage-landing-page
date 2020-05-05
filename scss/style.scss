@@ -99,11 +99,28 @@ main {
   .testimonials {
     text-align: center;
     margin-bottom: 5rem;
+    .buttons {
+      position: relative;
+    }
+    #prev,
+    #next {
+      padding: 1rem;
+      position: absolute;
+      cursor: pointer;
+      top: 50%;
+    }
+    #prev {
+      left: 0;
+    }
+
+    #next {
+      right: 0;
+    }
     &__details {
       margin: 2rem 0;
       position: relative;
       // border: solid yellow;
-      // overflow: hidden;
+      overflow: hidden;
     }
     &__list {
       width: 130%;
