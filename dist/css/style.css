@@ -148,6 +148,21 @@ main .testimonials {
       min-height: 200px; }
     main .testimonials__card-title {
       margin: 0.8rem 0; }
+  main .testimonials__togglers {
+    display: flex;
+    margin: 0 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 12%;
+    justify-content: space-around;
+    align-items: center; }
+  main .testimonials__toggler {
+    cursor: pointer;
+    list-style: circle;
+    color: #f25f3a; }
+    main .testimonials__toggler:hover,
+    main .testimonials__toggler :active {
+      list-style: disc; }
 
 .action {
   padding: 60px 0;

@@ -6,6 +6,7 @@ const UI = {
   testimonial: ".testimonials__item",
   next: "#next",
   prev: "#prev",
+  togglers: ".testimonials__toggler",
 };
 
 const emailSubmit = document.querySelector(UI.emailBtn),
@@ -13,6 +14,7 @@ const emailSubmit = document.querySelector(UI.emailBtn),
   testimonial = document.querySelectorAll(UI.testimonial),
   nextBtn = document.querySelector(UI.next),
   prevBtn = document.querySelector(UI.prev),
+  tabTogglers = document.querySelectorAll(UI.togglers),
   email = document.querySelector(UI.email);
 
 // Functionalities
@@ -30,6 +32,9 @@ function emailValidation(e) {
     email.style.color = "initial";
   }
 }
+
+let arr = [...tabTogglers];
+console.log(arr);
 
 // Carousel
 function showNextItem() {
