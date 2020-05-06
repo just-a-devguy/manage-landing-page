@@ -49,6 +49,10 @@ img {
   margin-top: 30px;
   color: #fff; }
 
+@media (max-width: 700px) {
+  .showcase .grid-item {
+    grid-template-columns: 1fr; } }
+
 header .main-nav {
   margin: 2rem auto;
   display: flex;
