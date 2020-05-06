@@ -1,5 +1,4 @@
 @import "_utilities";
-@import "_mobile";
 
 // @use 'utilities' as *;
 // Header
@@ -100,25 +99,11 @@ main {
   .testimonials {
     text-align: center;
     margin-bottom: 5rem;
-    .buttons {
-      position: relative;
-    }
-    #prev,
-    #next {
-      padding: 1rem;
-      position: absolute;
-      cursor: pointer;
-      top: 50%;
-    }
-    #prev {
-      left: 0;
-    }
-
-    #next {
-      right: 0;
+    &__title {
+      margin-bottom: 2rem;
     }
     &__details {
-      margin: 2rem 0;
+      // margin: 1rem 0;
       position: relative;
       // border: solid yellow;
       overflow: hidden;
@@ -127,7 +112,6 @@ main {
       width: 130%;
       display: flex;
       overflow: auto;
-      // border: solid green;
     }
     &__item {
       // border: solid blue;
@@ -164,21 +148,22 @@ main {
       }
     }
     &__togglers {
+      // border: solid red;
+      position: relative;
       display: flex;
-      margin: 0 52%;
+      margin: 1rem 50%;
       transform: translate(-50%, -50%);
-      text-align: center;
-      width: 12%;
+      // text-align: center;
+      width: 10%;
       justify-content: space-around;
       align-items: center;
-      // padding-left: 1rem;
+      padding-left: 1.5rem;
     }
     &__toggler {
       cursor: pointer;
       list-style: circle;
       color: $primary-color;
-      &:hover,
-      :active {
+      &:first-of-type {
         list-style: disc;
       }
     }
@@ -320,3 +305,5 @@ main {
     color: $neutral-color;
   }
 }
+
+@import "_mobile";

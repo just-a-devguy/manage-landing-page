@@ -1,7 +1,18 @@
 @media (max-width: 700px) {
-  .showcase .grid-item {
-    grid-template-columns: 1fr;
+  header {
+    .showcase {
+      grid-template-columns: repeat(1, 1fr);
+      &__mssg {
+        order: 2;
+      }
+      &__img {
+        order: 1;
+      }
+    }
   }
+  // .showcase .grid-item {
+  //   grid-template-columns: 1fr;
+  // }
 
   // .action {
   //   background-image: url(/images/bg-simplify-section-mobile.svg);

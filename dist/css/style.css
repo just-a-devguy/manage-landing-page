@@ -49,10 +49,6 @@ img {
   margin-top: 30px;
   color: #fff; }
 
-@media (max-width: 700px) {
-  .showcase .grid-item {
-    grid-template-columns: 1fr; } }
-
 header .main-nav {
   margin: 2rem auto;
   display: flex;
@@ -108,20 +104,9 @@ main .values__items .values__item {
 main .testimonials {
   text-align: center;
   margin-bottom: 5rem; }
-  main .testimonials .buttons {
-    position: relative; }
-  main .testimonials #prev,
-  main .testimonials #next {
-    padding: 1rem;
-    position: absolute;
-    cursor: pointer;
-    top: 50%; }
-  main .testimonials #prev {
-    left: 0; }
-  main .testimonials #next {
-    right: 0; }
+  main .testimonials__title {
+    margin-bottom: 2rem; }
   main .testimonials__details {
-    margin: 2rem 0;
     position: relative;
     overflow: hidden; }
   main .testimonials__list {
@@ -153,19 +138,19 @@ main .testimonials {
     main .testimonials__card-title {
       margin: 0.8rem 0; }
   main .testimonials__togglers {
+    position: relative;
     display: flex;
-    margin: 0 52%;
+    margin: 1rem 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    width: 12%;
+    width: 10%;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    padding-left: 1.5rem; }
   main .testimonials__toggler {
     cursor: pointer;
     list-style: circle;
     color: #f25f3a; }
-    main .testimonials__toggler:hover,
-    main .testimonials__toggler :active {
+    main .testimonials__toggler:first-of-type {
       list-style: disc; }
 
 .action {
@@ -264,3 +249,11 @@ main .testimonials {
   .footer .footer-copyright span {
     font-size: 12px;
     color: #9095a7; }
+
+@media (max-width: 700px) {
+  header .showcase {
+    grid-template-columns: repeat(1, 1fr); }
+    header .showcase__mssg {
+      order: 2; }
+    header .showcase__img {
+      order: 1; } }
