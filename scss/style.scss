@@ -163,6 +163,25 @@ main {
         margin: 0.8rem 0;
       }
     }
+    &__togglers {
+      display: flex;
+      margin: 0 52%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 12%;
+      justify-content: space-around;
+      align-items: center;
+      // padding-left: 1rem;
+    }
+    &__toggler {
+      cursor: pointer;
+      list-style: circle;
+      color: $primary-color;
+      &:hover,
+      :active {
+        list-style: disc;
+      }
+    }
   }
 }
 
