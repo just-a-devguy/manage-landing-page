@@ -1,5 +1,4 @@
 @import "_utilities";
-@import "_mobile";
 
 // @use 'utilities' as *;
 // Header
@@ -320,3 +319,5 @@ main {
     color: $neutral-color;
   }
 }
+
+@import "_mobile";
