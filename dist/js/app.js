@@ -4,16 +4,12 @@ const UI = {
   emailBtn: "#btn",
   email: "#email-input",
   testimonial: ".testimonials__item",
-  next: "#next",
-  prev: "#prev",
   togglers: ".testimonials__toggler",
 };
 
 const emailSubmit = document.querySelector(UI.emailBtn),
   invalidMssg = document.querySelector(UI.errMssg),
   testimonial = document.querySelectorAll(UI.testimonial),
-  nextBtn = document.querySelector(UI.next),
-  prevBtn = document.querySelector(UI.prev),
   tabTogglers = document.querySelectorAll(UI.togglers),
   email = document.querySelector(UI.email);
 
@@ -33,27 +29,25 @@ function emailValidation(e) {
   }
 }
 
-let arr = [...tabTogglers];
-console.log(arr);
+let togglerArr = [...tabTogglers];
 
 // Carousel
-function showNextItem() {
-  testimonial[3].scrollIntoView({
+function displayItem() {
+  testimonial[this.id].scrollIntoView({
     inline: "start",
     behavior: "smooth",
     block: "nearest",
   });
-}
 
-function showPrevItem() {
-  testimonial[0].scrollIntoView({
-    inline: "start",
-    behavior: "smooth",
-    block: "nearest",
+  togglerArr.forEach((toggler) => {
+    toggler.style.listStyle = "circle";
   });
+
+  this.style.listStyle = "disc";
 }
 
 // Event Listeners
 emailSubmit.addEventListener("click", emailValidation);
-next.addEventListener("click", showNextItem);
-prev.addEventListener("click", showPrevItem);
+togglerArr.forEach((toggler) => {
+  toggler.addEventListener("click", displayItem);
+});
