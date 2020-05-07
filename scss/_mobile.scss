@@ -1,17 +1,9 @@
 @media (max-width: 700px) {
   header {
     .showcase {
-<<<<<<< HEAD
-      grid-template-columns: 1fr;
-
-      &__mssg {
-        order: 2;
-        text-align: center;
-=======
       grid-template-columns: repeat(1, 1fr);
       &__mssg {
         order: 2;
->>>>>>> f827d6c55fd9afadf6c0b8226b3a8fc7ec812eec
       }
       &__img {
         order: 1;
@@ -25,9 +17,18 @@
   main {
     .values {
       grid-template-columns: 1fr;
-
       &__mssg {
         text-align: center;
+      }
+      &__items {
+        .values__item {
+          &-header {
+            background-color: $pale-color;
+            background-clip: padding-box;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+          }
+        }
       }
     }
   }
