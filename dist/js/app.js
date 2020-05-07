@@ -1,3 +1,4 @@
+alert("connected");
 // UI Elements
 const UI = {
   errMssg: "#err-mssg",
