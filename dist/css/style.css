@@ -93,16 +93,22 @@ main .values__mssg p {
   padding-right: 8rem; }
 
 main .values__items .values__item {
-  display: flex;
   justify-content: space-around;
   margin: 0.5rem 0; }
-  main .values__items .values__item-num p {
+  main .values__items .values__item-header {
+    display: flex;
+    align-items: center; }
+  main .values__items .values__item-title {
+    width: 85%;
+    margin-left: auto; }
+  main .values__items .values__item-num {
     background-color: #f25f3a;
     color: #fafafa;
     padding: 0.5rem 1.2rem;
     border-radius: 2rem; }
   main .values__items .values__item-mssg {
-    width: 80%; }
+    width: 85%;
+    margin-left: auto; }
     main .values__items .values__item-mssg__header {
       margin-bottom: 0.5rem; }
 
