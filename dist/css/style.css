@@ -263,25 +263,18 @@ main .testimonials {
 
 @media screen and (max-width: 768px) {
   header .showcase {
-<<<<<<< HEAD
-    grid-template-columns: repeat(1, 1fr); }
-=======
     grid-template-columns: 1fr; }
->>>>>>> 76994e7a69de25481fe6301847efec1569321533
     header .showcase__mssg {
-      order: 2; }
+      order: 2;
+      text-align: center; }
     header .showcase__img {
       order: 1; }
   main .values {
     grid-template-columns: 1fr; }
     main .values__mssg {
-<<<<<<< HEAD
       text-align: center; }
     main .values__items .values__item-header {
       background-color: #ffefeb;
       background-clip: padding-box;
       border-top-left-radius: 2rem;
       border-bottom-left-radius: 2rem; } }
-=======
-      text-align: center; } }
->>>>>>> 76994e7a69de25481fe6301847efec1569321533
