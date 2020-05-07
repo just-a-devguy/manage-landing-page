@@ -19,6 +19,9 @@ $main-font: "Be Vietnam", sans-serif;
 // General Styles
 body {
   font-family: $main-font;
+  p {
+    color: $neutral-color;
+  }
 }
 
 a {

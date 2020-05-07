@@ -6,6 +6,8 @@
 
 body {
   font-family: "Be Vietnam", sans-serif; }
+  body p {
+    color: #9095a7; }
 
 a {
   text-decoration: none; }
@@ -68,6 +70,8 @@ header .main-nav {
     color: #1d1e25; }
     header .main-nav__link:hover {
       color: rgba(29, 30, 37, 0.5); }
+  header .main-nav .main-nav__burger {
+    display: none; }
 
 header .showcase__mssg {
   display: flex;
@@ -78,7 +82,8 @@ header .showcase__mssg {
     font-size: 3rem; }
   header .showcase__mssg p {
     margin: 2rem 0;
-    padding-right: 3rem; }
+    padding-right: 3rem;
+    color: #9095a7; }
 
 main .values__mssg h2 {
   font-size: 2rem;
@@ -250,9 +255,8 @@ main .testimonials {
     font-size: 12px;
     color: #9095a7; }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 768px) {
   header .showcase {
-<<<<<<< HEAD
     grid-template-columns: 1fr; }
     header .showcase__mssg {
       order: 2;
@@ -263,10 +267,3 @@ main .testimonials {
     grid-template-columns: 1fr; }
     main .values__mssg {
       text-align: center; } }
-=======
-    grid-template-columns: repeat(1, 1fr); }
-    header .showcase__mssg {
-      order: 2; }
-    header .showcase__img {
-      order: 1; } }
->>>>>>> f827d6c55fd9afadf6c0b8226b3a8fc7ec812eec
