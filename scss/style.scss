@@ -62,19 +62,26 @@ main {
     &__items {
       // width: 580px;
       .values__item {
-        display: flex;
+        // display: flex;
         justify-content: space-around;
         margin: 0.5rem 0;
+        &-header {
+          display: flex;
+          align-items: center;
+        }
+        &-title {
+          width: 85%;
+          margin-left: auto;
+        }
         &-num {
-          p {
-            background-color: $primary-color;
-            color: $light-color;
-            padding: 0.5rem 1.2rem;
-            border-radius: 2rem;
-          }
+          background-color: $primary-color;
+          color: $light-color;
+          padding: 0.5rem 1.2rem;
+          border-radius: 2rem;
         }
         &-mssg {
-          width: 80%;
+          width: 85%;
+          margin-left: auto;
           &__header {
             margin-bottom: 0.5rem;
           }
