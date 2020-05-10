@@ -68,6 +68,8 @@ header .main-nav {
     color: #1d1e25; }
     header .main-nav__link:hover {
       color: rgba(29, 30, 37, 0.5); }
+  header .main-nav__burger {
+    display: none; }
 
 header .showcase__mssg {
   display: flex;
