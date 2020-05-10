@@ -90,14 +90,22 @@ main .values__mssg p {
 main .values__items .values__item {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   margin: 0.5rem 0; }
-  main .values__items .values__item-num p {
-    background-color: #f25f3a;
-    color: #fafafa;
-    padding: 0.5rem 1.2rem;
-    border-radius: 2rem; }
+  main .values__items .values__item-header {
+    display: flex;
+    align-items: center; }
+    main .values__items .values__item-header__num {
+      background-color: #f25f3a;
+      color: #fafafa;
+      padding: 0.5rem 1.2rem;
+      border-radius: 2rem; }
+    main .values__items .values__item-header__title {
+      margin-left: auto;
+      width: 80%; }
   main .values__items .values__item-mssg {
-    width: 80%; }
+    width: 80%;
+    align-self: flex-end; }
     main .values__items .values__item-mssg__header {
       margin-bottom: 0.5rem; }
 
