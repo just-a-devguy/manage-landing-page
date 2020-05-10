@@ -291,5 +291,9 @@ main .testimonials {
     grid-template-columns: 1fr; }
     main .values__mssg {
       text-align: center; }
-    main .values p {
-      padding-right: 0; } }
+      main .values__mssg p {
+        padding-right: 0; }
+    main .values__item-header {
+      background-color: #ffefeb;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem; } }
