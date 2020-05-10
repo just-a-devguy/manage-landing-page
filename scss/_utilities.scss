@@ -37,6 +37,16 @@ img {
   display: inline-block;
 }
 
+h1,
+h2,
+h3 {
+  color: $secondary-color;
+}
+
+p {
+  color: $neutral-color;
+}
+
 #btn {
   box-shadow: none;
 }

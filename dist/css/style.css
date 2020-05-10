@@ -19,6 +19,14 @@ li {
 img {
   display: inline-block; }
 
+h1,
+h2,
+h3 {
+  color: #242d52; }
+
+p {
+  color: #9095a7; }
+
 #btn {
   box-shadow: none; }
 
@@ -141,7 +149,7 @@ main .testimonials {
       main .testimonials__card-header img {
         width: 100%; }
     main .testimonials__card-body {
-      background-color: #ffefeb;
+      background-color: #fafafa;
       margin-top: 2rem;
       padding-top: 2rem;
       border-radius: 0.2rem;
