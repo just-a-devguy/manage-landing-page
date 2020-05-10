@@ -1,5 +1,31 @@
-@media (max-width: 700px) {
+@media (max-width: 877px) {
+}
+
+@media (max-width: 768px) {
   header {
+    .main-nav {
+      &__burger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .close {
+        display: none;
+      }
+
+      &__burger.open {
+        .burger {
+          display: none;
+        }
+
+        .close {
+          display: block;
+        }
+      }
+      &__cta {
+        display: none;
+      }
+    }
     .showcase {
       grid-template-columns: 1fr;
       &__mssg {
@@ -10,4 +36,20 @@
       }
     }
   }
+  main {
+    .values {
+      grid-template-columns: 1fr;
+
+      &__mssg {
+        text-align: center;
+      }
+
+      p {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
 }
