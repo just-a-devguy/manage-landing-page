@@ -76,21 +76,28 @@ main {
       }
     }
     &__items {
-      // width: 580px;
       .values__item {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
         margin: 0.5rem 0;
-        &-num {
-          p {
+        &-header {
+          display: flex;
+          align-items: center;
+          &__num {
             background-color: $primary-color;
             color: $light-color;
             padding: 0.5rem 1.2rem;
             border-radius: 2rem;
           }
+          &__title {
+            margin-left: auto;
+            width: 80%;
+          }
         }
         &-mssg {
           width: 80%;
+          align-self: flex-end;
           &__header {
             margin-bottom: 0.5rem;
           }
