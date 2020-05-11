@@ -27,24 +27,23 @@ header {
         color: rgba(29, 30, 37, 0.5);
       }
     }
-    &__burger {
+    .mobile-nav__burger {
       display: none;
     }
   }
 
-  // .header__bg {
-  //   border: solid red;
-  //   position: absolute;
-  //   top: 0;
-  //   height: 1220px;
-  //   // width: 100%;
-  //   img {
-  //     border: solid black;
-  //     display: inline-block;
-  //     width: 100%;
-  //     height: 100%;
-  //   }
-  // }
+  .header__bg {
+    position: absolute;
+    top: -15%;
+    left: 58%;
+    width: 43%;
+    z-index: -3;
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
   // Showcase section
   .showcase {
     &__mssg {
@@ -105,6 +104,20 @@ main {
       }
     }
   }
+
+  .values__bg {
+    position: absolute;
+    top: 150%;
+    left: -30%;
+    width: 43%;
+    z-index: -3;
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   // Testimonials
   .testimonials {
     text-align: center;

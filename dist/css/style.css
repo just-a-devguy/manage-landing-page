@@ -77,8 +77,19 @@ header .main-nav {
     color: #1d1e25; }
     header .main-nav__link:hover {
       color: rgba(29, 30, 37, 0.5); }
-  header .main-nav__burger {
+  header .main-nav .mobile-nav__burger {
     display: none; }
+
+header .header__bg {
+  position: absolute;
+  top: -15%;
+  left: 58%;
+  width: 43%;
+  z-index: -3; }
+  header .header__bg img {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
 
 header .showcase__mssg {
   display: flex;
@@ -119,6 +130,17 @@ main .values__items .values__item {
     align-self: flex-end; }
     main .values__items .values__item-mssg__header {
       margin-bottom: 0.5rem; }
+
+main .values__bg {
+  position: absolute;
+  top: 150%;
+  left: -30%;
+  width: 43%;
+  z-index: -3; }
+  main .values__bg img {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
 
 main .testimonials {
   text-align: center;
@@ -291,22 +313,48 @@ main .testimonials {
       justify-self: center; } }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
   header .main-nav__cta {
     display: none; }
+  header .main-nav .logo,
+  header .main-nav .mobile-nav__burger {
+    z-index: 2; }
   header .main-nav__items {
+    z-index: 2;
     position: absolute;
     display: none;
     flex-direction: column;
+    justify-content: space-evenly;
     background-color: white;
     border: solid black;
     width: 80%;
-    top: 30%;
+    top: 18%;
     height: 60vh;
     text-align: center;
     padding: 1rem 0;
-    border-radius: 0.2rem; }
-    header .main-nav__items * {
-      padding: 0.3rem 0; }
+    border-radius: 0.6rem;
+    font-weight: 700; }
+  header .main-nav .mobile-nav__burger {
+    display: block; }
+  header .main-nav .mobile-nav__modal {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0.7) 100%);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none; }
+  header .header__bg {
+    position: absolute;
+    width: 100%;
+    top: -25%;
+    left: 35%; }
+    header .header__bg img {
+      display: inline-block;
+      width: 100%;
+      height: 100%; }
   header .showcase {
     grid-template-columns: 1fr;
     gap: 0; }
@@ -330,6 +378,15 @@ main .testimonials {
       background-color: #ffefeb;
       border-top-left-radius: 2rem;
       border-bottom-left-radius: 2rem; }
+  main .values__bg {
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    width: 100%; }
+    main .values__bg img {
+      display: inline-block;
+      width: 100%;
+      height: 100%; }
   main .testimonials__list {
     width: 400%; }
   main .testimonials__togglers {

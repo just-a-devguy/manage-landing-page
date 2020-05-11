@@ -8,6 +8,9 @@ const UI = {
   hamburger: ".mobile-nav__burger",
   navToggler: ".mobile-nav__toggler",
   navItems: ".main-nav__items",
+  closeBtn: "#close-btn",
+  modal: ".mobile-nav__modal",
+  body: "body",
 };
 
 const emailSubmit = document.querySelector(UI.emailBtn),
@@ -17,7 +20,9 @@ const emailSubmit = document.querySelector(UI.emailBtn),
   tabTogglers = document.querySelectorAll(UI.togglers),
   hamburger = document.querySelector(UI.hamburger),
   navToggler = document.querySelector(UI.navToggler),
-  navItems = document.querySelector(UI.navItems);
+  navItems = document.querySelector(UI.navItems),
+  modal = document.querySelector(UI.modal);
+body = document.getElementsByTagName(UI.body);
 
 // Functionalities
 function emailValidation(e) {
@@ -55,18 +60,37 @@ function displayItem() {
 // Mobile Nav
 // console.log(hamburger);
 // console.log(navItems);
+
+function menuToggle() {
+  if (navItems.style.display === "none") {
+    showMenu();
+  } else {
+    hideMenu();
+  }
+}
+
 function showMenu() {
   navItems.style.display = "flex";
-  // this.children[0].innerHTML = "<img src='../../images/icon-close.svg' />";
-  // console.log(this.children.currentSrc);
-  navToggler.innerHTML = "<img src='images/icon-close.svg' />";
-  console.log(navToggler);
+  navToggler.setAttribute("id", "close-btn");
+  navToggler.setAttribute("src", "images/icon-close.svg");
+  navToggler.setAttribute("alt", "close-icon");
+  modal.style.display = "block";
+  body[0].style.overflow = "hidden";
+}
+
+function hideMenu() {
+  navItems.style.display = "none";
+  navToggler.removeAttribute("id");
+  navToggler.setAttribute("src", "images/icon-hamburger.svg");
+  navToggler.setAttribute("alt", "hamburger");
+  modal.style.display = "none";
+  body[0].style.overflow = "visible";
 }
 
 // Event Listeners
 emailSubmit.addEventListener("click", emailValidation);
 
-hamburger.addEventListener("click", showMenu);
+hamburger.addEventListener("click", menuToggle);
 
 togglerArr.forEach((toggler) => {
   toggler.addEventListener("click", displayItem);
