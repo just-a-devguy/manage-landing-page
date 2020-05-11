@@ -210,7 +210,7 @@ main {
     padding: 0.8rem 2rem;
     width: 160px;
     height: 45px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
   }
   #action__btn:hover {
@@ -274,7 +274,7 @@ main {
     // width: 240px;
     // // height: 45px;
     border-radius: 2rem;
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 0.5rem;
     margin-right: 10px;
     border: none;
@@ -311,7 +311,7 @@ main {
   }
 
   .footer-copyright span {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: $neutral-color;
   }
 }

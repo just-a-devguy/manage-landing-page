@@ -55,10 +55,17 @@
         display: none;
       }
     }
+
     .showcase {
       grid-template-columns: 1fr;
+      gap: 0;
       &__mssg {
         order: 2;
+        align-items: center;
+        text-align: center;
+        p {
+          padding-right: 0;
+        }
       }
       &__img {
         order: 1;
@@ -76,6 +83,9 @@
         }
       }
       &__item {
+        h3 {
+          font-size: 1rem;
+        }
         &-header {
           background-color: $pale-color;
           border-top-left-radius: 2rem;
@@ -91,6 +101,10 @@
       flex-direction: column;
       text-align: center;
       font-size: 1rem;
+
+      h2 {
+        margin-bottom: 2rem;
+      }
     }
   }
 
@@ -125,4 +139,16 @@
 }
 
 @media (max-width: 600px) {
+  header {
+    .showcase {
+      &__mssg {
+        // justify-content: center;
+        align-items: center;
+        text-align: center;
+        p {
+          padding-right: 0;
+        }
+      }
+    }
+  }
 }
