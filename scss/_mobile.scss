@@ -33,26 +33,25 @@
 @media (max-width: 768px) {
   header {
     .main-nav {
-      &__burger {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-      }
-      .close {
-        display: none;
-      }
-
-      &__burger.open {
-        .burger {
-          display: none;
-        }
-
-        .close {
-          display: block;
-        }
-      }
       &__cta {
         display: none;
+      }
+      &__items {
+        // display: none;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        border: solid black;
+        width: 80%;
+        top: 30%;
+        height: 60vh;
+        text-align: center;
+        padding: 1rem 0;
+        border-radius: 0.2rem;
+        & * {
+          padding: 0.3rem 0;
+        }
       }
     }
     .showcase {
@@ -81,6 +80,15 @@
           border-top-left-radius: 2rem;
           border-bottom-left-radius: 2rem;
         }
+      }
+    }
+    // Testimonials
+    .testimonials {
+      &__list {
+        width: 400%;
+      }
+      &__togglers {
+        width: 25%;
       }
     }
   }

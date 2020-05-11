@@ -291,18 +291,22 @@ main .testimonials {
       justify-self: center; } }
 
 @media (max-width: 768px) {
-  header .main-nav__burger {
-    display: flex;
-    align-items: center;
-    cursor: pointer; }
-  header .main-nav .close {
-    display: none; }
-  header .main-nav__burger.open .burger {
-    display: none; }
-  header .main-nav__burger.open .close {
-    display: block; }
   header .main-nav__cta {
     display: none; }
+  header .main-nav__items {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border: solid black;
+    width: 80%;
+    top: 30%;
+    height: 60vh;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0.2rem; }
+    header .main-nav__items * {
+      padding: 0.3rem 0; }
   header .showcase {
     grid-template-columns: 1fr; }
     header .showcase__mssg {
@@ -319,6 +323,10 @@ main .testimonials {
       background-color: #ffefeb;
       border-top-left-radius: 2rem;
       border-bottom-left-radius: 2rem; }
+  main .testimonials__list {
+    width: 400%; }
+  main .testimonials__togglers {
+    width: 25%; }
   .action .container {
     flex-direction: column;
     text-align: center;
