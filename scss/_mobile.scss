@@ -32,7 +32,7 @@
 
 @media (max-width: 768px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   header {
     .main-nav {
@@ -61,6 +61,7 @@
       }
       .mobile-nav__burger {
         display: block;
+        cursor: pointer;
       }
       .mobile-nav__modal {
         background: linear-gradient(
