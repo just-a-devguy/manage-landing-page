@@ -48,6 +48,10 @@ p {
   color: $neutral-color;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 #btn {
   box-shadow: none;
 }
