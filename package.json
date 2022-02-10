@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.14.0"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "sass": "node-sass --watch scss/style.scss dist/css/style.css"
